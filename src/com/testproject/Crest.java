@@ -19,5 +19,13 @@ public class Crest extends Springer {
 
     }
 
+    protected void dispCrest(){
+        super.dispWithMsg(4);
+        System.out.println("Display in crest calss");
+    }
+
+
+
+
 
 }

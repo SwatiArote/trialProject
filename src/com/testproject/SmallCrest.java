@@ -10,10 +10,15 @@ public class SmallCrest extends Crest {
     protected String smalCrestName="Small Crest";
 
     public void dispMsg(){
+        super.dispYear();  //methods of base classes are accessible
         System.out.println("This is in Small Crest Class");
     }
 
     public SmallCrest(int smallCresId) {
         this.smallCresId = smallCresId;
     }
+
+
+
+
 }
