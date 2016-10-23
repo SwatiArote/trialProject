@@ -1,6 +1,12 @@
 import com.testproject.AgeException;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import java.util.*;
+
 
 /**
  * Created by swati on 27/9/16.
@@ -16,7 +22,7 @@ public class CollectionTest {
             System.out.println("You can vote");
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws ParseException {
      Scanner sc=new Scanner(System.in);
      int voterId;
 
@@ -29,7 +35,7 @@ public class CollectionTest {
      people.add(new Person("John",21,"Japan"));
      people.add(new Person("Shreya",22,"India"));
      people.add(new Person("Shruti",21,"India"));
-        people.add(new Person("Swati",21,"India"));
+     people.add(new Person("Swati",21,"India"));
 
         System.out.println("List of Members:");
        for(Person x:people){
@@ -58,6 +64,11 @@ public class CollectionTest {
         System.out.println("Please Enter voter Id-");
         voterId=sc.nextInt();
         System.out.println("Voter name is="+voterIdList.get(voterId));
+
+
+
+
+
 
     }
 }
